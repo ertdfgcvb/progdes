@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Multiplane Camera</title>
+		<style>
+			body {
+				margin: 0;
+				background-color: darkgray;
+			}
+			@keyframes rotate {
+				0% {
+					transform: rotateY(-60deg) rotateX(-30deg);
+				}
+				100% {
+					transform: rotateY(-60deg) rotateX(-30deg);
+				}
+				20% {
+					transform: rotateY(-60deg) rotateX(30deg);
+				}
+				50% {
+					transform: rotateY(60deg) rotateX(30deg);
+				}
+			}
+			main {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 100dvh;
+			}
+			#container {
+				display: grid;
+				place-items: center;
+				transform-style: preserve-3d;
+				perspective: 3000px;
+				animation: rotate 10s ease-in-out infinite;
+			}
+			.layer {
+				display: inline-block;
+				grid-area: 1/1/1/1;
+				user-select: none;
+				pointer-events: none;
+				/* border: 1px solid white; */
+				width: min(75vw, 75vh);
+			}
+			.layer img {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+		 	<div id="container">
+				<div style="translate: 0 0 -100px;" class="layer"><img src="img/1.png"></div>
+				<div style="translate: 0 0  -50px;" class="layer"><img src="img/2.png"></div>
+				<div style="translate: 0 0    0px;" class="layer"><img src="img/3.png"></div>
+				<div style="translate: 0 0   50px;" class="layer"><img src="img/4.png"></div>
+				<div style="translate: 0 0  100px;" class="layer"><img src="img/5.png"></div>
+			</div>
+		</main>
+	</body>
+</html>
