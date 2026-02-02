@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Andreas Gysin</title>
+		<style>
+
+			body {
+				margin:0;
+			}
+			.griglia{
+				display: grid;
+				height: 100vh;
+			}
+			.griglia div {
+				color: white;
+				padding-left: 2em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="griglia">
+			<div>A</div>
+			<div>N</div>
+			<div>D</div>
+			<div>R</div>
+			<div>E</div>
+			<div>A</div>
+			<div>S</div>
+			<div>G</div>
+			<div>Y</div>
+			<div>S</div>
+			<div>I</div>
+			<div>N</div>
+		</div>
+	<script>
+
+
+		const p1 = Math.random() * 0.4
+		const p2 = Math.random() * 0.4
+		const p3 = Math.random() * 0.4
+
+		const o1 = Math.random() * Math.PI * 2
+		const o2 = Math.random() * Math.PI * 2
+		const o3 = Math.random() * Math.PI * 2
+
+		document.querySelectorAll("div").forEach((e, i) => {
+
+
+			const a1 = i * p1 + o1
+			const a2 = i * p2 + o2
+			const a3 = i * p3 + o3
+
+			const r = (Math.cos(a1) * 0.5 + 0.5) * 255
+			const g = (Math.cos(a2) * 0.5 + 0.5) * 255
+			const b = (Math.cos(a3) * 0.5 + 0.5) * 255
+
+			e.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")"
+	})
+
+	</script>
+	</body>
+</html>
