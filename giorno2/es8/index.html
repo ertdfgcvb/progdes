@@ -7,6 +7,7 @@
 	<style>
 		body {
 			background-color: gray;
+			margin: 0;
 		}
 	</style>
 </head>
@@ -14,28 +15,42 @@
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
 	<script>
 
-		let shape;
+		let shape
+		let tex
 		function preload() {
-			shape = loadModel('/ag/ag.obj', true)
+			shape = loadModel('ag/ag.obj', true)
+			tex = loadImage('ag/ag.jpg')
 		}
 
+		const OFFS_RY = 4.1
+
 		function setup() {
-			createCanvas(800, 600, WEBGL);
+			createCanvas(windowWidth, windowHeight, WEBGL)
+		}
+
+		function onWindowResized() {
+			resizeCanvas(windowWidth, windowHeight)
 		}
 
 		function draw() {
-			background(0)
-			orbitControl()
+			// background(0)
+			// const rotY = -(mouseX - width/2) * 0.005
+			// const rotX = -(mouseY - height/2) * 0.005
+			// const scl = 2.5
+
+			const rotX = sin(frameCount * 0.0063) * TAU
+			const rotY = sin(frameCount * 0.0064) * TAU
+			const scl = sin(frameCount * 0.0065) * 4 + 4.5
+
+			rotateX(PI + rotX)
+			rotateY(rotY + OFFS_RY)
+			scale(scl)
 
 			noStroke()
-			fill(120)
-
-
+			textureMode(NORMAL)
+			texture(tex)
 			model(shape)
-			directionalLight(255, 0, 0, 1, 1, 0);
 		}
-
-
 	</script>
 </body>
 </html>
