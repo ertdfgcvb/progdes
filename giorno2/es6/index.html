@@ -14,9 +14,16 @@
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
 	<script>
 
+		let faccione
+
+		function preload() {
+			faccione = loadImage('ag.png')
+		}
+
 		function setup() {
 			// creiamo un elemento canvas
-			createCanvas(512, 384)
+			createCanvas(800, 600)
+			faccione.resize(faccione.width / 7, faccione.height / 7)
 		}
 
 		function draw(){
@@ -24,19 +31,22 @@
 			background(0)
 			noStroke()
 
-			let numH = 30
-			let numV = 30
-			let d = 12
+			let numH = faccione.width
+			let numV = faccione.height
+			let d = 8
 			let ox = (width - (numH - 1) * d) / 2
 			let oy = (height - (numV - 1) * d) / 2
 			for (let j=0; j<numV; j++) {
 				for(let i=0; i<numH; i++) {
-					fill(i * 10, j * 10, 255-i*10)
+					fill(faccione.get(i, j))
 					let px = ox + i * d
 					let py = oy + j * d
-					circle(px, py, 10)
+					circle(px, py, 7)
 				}
 			}
+
+			image(faccione, 0, 0)
+
 		}
 	</script>
 </body>
