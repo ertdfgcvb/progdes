@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+
+	<script>
+
+		function setup() {
+			createCanvas(700, 400)
+			background(200, 200, 200)
+		}
+
+		function draw() {
+			noStroke()
+			fill(mouseX, mouseY, 0)
+			let diametro = sin(frameCount * 0.05) * 127 + 128
+			ellipse(mouseX, mouseY, diametro, diametro)
+			ellipse(width-mouseX, mouseY, diametro, diametro)
+		}
+
+	</script>
+
+</body>
+</html>
