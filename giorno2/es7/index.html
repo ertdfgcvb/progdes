@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+	<script>
+
+		let faccione
+
+		function preload() {
+			faccione = loadImage('ag.png')
+		}
+
+		function setup() {
+			// creiamo un elemento canvas
+			createCanvas(800, 600)
+			faccione.resize(faccione.width / 7, faccione.height / 7)
+		}
+
+		function draw(){
+			// sfondo nero
+			background(0)
+			noStroke()
+
+			let numH = faccione.width
+			let numV = faccione.height
+			let d = 8
+			let ox = (width - (numH - 1) * d) / 2
+			let oy = (height - (numV - 1) * d) / 2
+
+			let amount = mouseX * 0.3
+
+			let ny = frameCount * 0.011
+			let nx = frameCount * 0.031
+			let nz = frameCount * 0.014
+
+			for (let j=0; j<numV; j++) {
+				for(let i=0; i<numH; i++) {
+					let col = faccione.get(i, j)
+					let al = alpha(col)
+					if (al < 250) continue
+					let br = brightness(col)
+					fill(255)
+					let px = ox + i * d + map(noise( i * 0.02 + nx, j * 0.02 + ny, nz), 0, 1, -amount, amount)
+					let py = oy + j * d + map(noise( i * 0.02 + nx, j * 0.02 + ny, nz + 5), 0, 1, -amount, amount)
+					circle(px, py, br * 0.1)
+				}
+			}
+
+			image(faccione, 0, 0)
+
+		}
+	</script>
+</body>
+</html>
