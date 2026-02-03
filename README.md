@@ -22,8 +22,9 @@ A supporto delle lezioni vengono commentati segnali provenienti dall’ecosistem
 - “I've never felt this much behind as a programmer”: [Andrej Karpathy su X](https://x.com/karpathy/status/2004607146781278521)
 - Riflessioni di Andrej Karpathy su Claude che evidenziano il cambiamento del ruolo del programmatore nell’era degli LLM: [Andrej Karpathy su X](https://x.com/karpathy/status/2015883857489522876)
 - Dati che mostrano il calo delle domande poste su Stack Overflow; indicano cambiamento nelle pratiche di del coding: [Sam Rose su X](https://x.com/samwhoo/status/2007590903448514921)
-- A social network for moltbots to hang out: [HackerNews](https://news.ycombinator.com/item?id=46802254)
-- Sam Altman si sente inutile: [S.A. su X](https://x.com/sama/status/2018444309750862333)
+- A social network for moltbots to hang out: [HackerNews](https://news.ycombinator.com/item?id=46802254)  
+- Sam Altman si sente inutile: [S.A. su X](https://x.com/sama/status/2018444309750862333)  
+- RentAHuman.io: Robots need your body [su X](https://x.com/AlexanderTw33ts/status/2018436050935292276)  
 - t.b.d.
 
 ## Modalità didattica
