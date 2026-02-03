@@ -23,6 +23,7 @@ A supporto delle lezioni vengono commentati segnali provenienti dall’ecosistem
 - Riflessioni di Andrej Karpathy su Claude che evidenziano il cambiamento del ruolo del programmatore nell’era degli LLM: [Andrej Karpathy su X](https://x.com/karpathy/status/2015883857489522876)
 - Dati che mostrano il calo delle domande poste su Stack Overflow; indicano cambiamento nelle pratiche di del coding: [Sam Rose su X](https://x.com/samwhoo/status/2007590903448514921)
 - A social network for moltbots to hang out: [HackerNews](https://news.ycombinator.com/item?id=46802254)
+- Sam Altman si sente inutile: [S.A. su X](https://x.com/sama/status/2018444309750862333)
 - t.b.d.
 
 ## Modalità didattica
@@ -60,9 +61,9 @@ La visione de filmati storici verrà svolta in gruppo (ca. 1.5h per lezione). Vi
 “La mia casa”. In un’epoca in cui Internet vuole dire principalmente app e social media, questo esercizio propone un ritorno alla forma tradizionale della presenza online: la home page personalizzata.
 
 ### Obiettivi
-Costruire una pagina HTML a contenuto personale.
-Comprendere i fondamenti di HTML (struttura), CSS (layout) e JavaScript.
-La pagina verrà pubblicata e sarà accessible online. 
+Costruire una pagina HTML a contenuto personale.  
+Comprendere i fondamenti di HTML (struttura), CSS (layout) e JavaScript.  
+La pagina verrà pubblicata e sarà accessible online.   
 
 Struttura del sito: 
 - Pagina singola
@@ -73,7 +74,13 @@ Struttura del sito:
 
 
 ## Giorno 2
-t.b.d.
+“Me, Myself and AI”. Il proprio autoritratto procedurale. 
+
+### Obiettivi 
+Costruire il proprio autoritratto utilizzando tecniche generative e/o interattive.  
+L'aprroccio può essere concettuale o formale. 
+Trovare un modo per integrarlo nella pagina.  
+
 
 ## Giorno 3
 t.b.d.
