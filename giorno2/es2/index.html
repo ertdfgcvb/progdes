@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+
+	<script>
+
+		function setup() {
+			createCanvas(700, 400)
+			background(200, 200, 200)
+		}
+
+		function draw() {
+
+
+			noStroke()
+
+			if (frameCount % 2 == 0) {
+				fill(0)
+			} else {
+				fill(255)
+			}
+
+			ellipse(mouseX, mouseY, 100, 100)
+			ellipse(width-mouseX, mouseY, 100, 100)
+
+		}
+
+
+	</script>
+
+</body>
+</html>
