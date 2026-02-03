@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+	<script>
+
+		function setup() {
+			// creiamo un elemento canvas
+			createCanvas(512, 384)
+		}
+
+		function draw(){
+			// sfondo nero
+			background(0)
+			noStroke()
+
+			let numH = 30
+			let numV = 30
+			let d = 12
+			let ox = (width - (numH - 1) * d) / 2
+			let oy = (height - (numV - 1) * d) / 2
+			for (let j=0; j<numV; j++) {
+				for(let i=0; i<numH; i++) {
+					fill(i * 10, j * 10, 255-i*10)
+					let px = ox + i * d
+					let py = oy + j * d
+					circle(px, py, 10)
+				}
+			}
+		}
+	</script>
+</body>
+</html>
