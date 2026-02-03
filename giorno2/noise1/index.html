@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+	<script>
+
+		function setup() {
+			createCanvas(600, 400)
+		}
+
+		function draw(){
+			background(0)
+
+			noStroke()
+
+
+			let sn = mouseX * 0.01
+
+			for (let i=0; i<width; i++) {
+
+				let r1 = sin(i * 0.1) * 30
+				rect(i, r1 + 100, 1, 1)
+
+				let r2 = random(-30, 30)
+				rect(i, r2 + 200, 1, 1)
+
+				let r3 = noise(i * 0.01 + sn) * 60 - 30
+				rect(i, r3 + 300, 1, 1)
+
+
+
+			}
+
+		}
+	</script>
+</body>
+</html>
