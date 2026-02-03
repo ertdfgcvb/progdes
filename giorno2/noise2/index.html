@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+	<script>
+
+		function setup() {
+			createCanvas(600, 400)
+		}
+
+		function draw(){
+			background(0)
+
+			noFill()
+			stroke(255)
+
+			let sn = mouseX * 0.01
+			let depth = mouseY
+
+			for (let j=50; j<height-50; j+=6) {
+				beginShape()
+				for (let i = 0; i < width; i+=5) {
+					let n = noise(i * 0.003 + sn, j * 0.007 + frameCount * 0.01) * 300 - depth
+					n = min(0, n)
+					vertex(i, n + j)
+				}
+				endShape()
+			}
+		}
+	</script>
+</body>
+</html>
