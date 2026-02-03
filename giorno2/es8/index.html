@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+	<script>
+
+		let shape;
+		function preload() {
+			shape = loadModel('/ag/ag.obj', true)
+		}
+
+		function setup() {
+			createCanvas(800, 600, WEBGL);
+		}
+
+		function draw() {
+			background(0)
+			orbitControl()
+
+			noStroke()
+			fill(120)
+
+
+			model(shape)
+			directionalLight(255, 0, 0, 1, 1, 0);
+		}
+
+
+	</script>
+</body>
+</html>
