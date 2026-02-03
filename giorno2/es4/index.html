@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+	<script>
+
+		function setup() {
+			// creiamo un elemento canvas
+			createCanvas(512, 384)
+		}
+
+		function draw(){
+			// sfondo nero
+			background(0)
+			noStroke()
+
+			for (let j=0; j<25; j++) {
+				for(let i=0; i<25; i++) {
+					fill(i * 10, j * 10, 255-i*10)
+					circle(10 + i * 10, 10 + j * 10, 6)
+				}
+			}
+
+			// circle( 10, 10, 6)
+			// circle( 20, 10, 6)
+			// circle( 30, 10, 6)
+			// circle( 40, 10, 6)
+			// circle( 50, 10, 6)
+			// circle( 60, 10, 6)
+			// circle( 70, 10, 6)
+			// circle( 80, 10, 6)
+			// circle( 90, 10, 6)
+			// circle(100, 10, 6)
+			// circle(110, 10, 6)
+			// circle(120, 10, 6)
+
+
+			// circle( 10, 20, 6)
+			// circle( 20, 20, 6)
+			// circle( 30, 20, 6)
+			// circle( 40, 20, 6)
+			// circle( 50, 20, 6)
+			// circle( 60, 20, 6)
+			// circle( 70, 20, 6)
+			// circle( 80, 20, 6)
+			// circle( 90, 20, 6)
+			// circle(100, 20, 6)
+			// circle(110, 20, 6)
+			// circle(120, 20, 6)
+
+
+		}
+
+	</script>
+</body>
+</html>
