@@ -84,7 +84,12 @@ Trovare un modo per integrarlo nella pagina.
 
 
 ## Giorno 3
-t.b.d.
+“TTyyyppppeeeee”. Caratteri in movimento. 
+
+### Obiettivi 
+Progettare un carattere o un set di caratteri in maniera modulare e utilizzari per il proprio monogramma, il titolo della pagina o per l’intero contenuto.  
+Il “font” può essere interattivo e/o generativo, può reagire a dati o stimoli esterni (meteo? musica? voce?). Cercare se possibile di integrarlo nel layout.  
+
 
 ## Giorno 4
 t.b.d.
