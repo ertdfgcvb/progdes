@@ -25,6 +25,4 @@ function draw() {
 	vertex(px + 2.12 * s + random(-2,2), py + 10.0 * s + random(-2,2))
 	vertex(px + 0.00 * s + random(-2,2), py + 10.0 * s + random(-2,2))
 	endShape(CLOSE)
-
-
 }
