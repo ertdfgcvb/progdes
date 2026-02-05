@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>G04E01: CSS Grids</title>
+	<style>
+		body {
+			margin: 1em 2em;
+		}
+		.contenitore_principale {
+			display: grid;
+			grid-template-columns: 8em 1fr 1fr;
+			column-gap: 1em;
+			row-gap: 2em;
+		}
+
+		@media (max-width: 700px) {
+			.contenitore_principale {
+				grid-template-columns: 1fr;
+			}
+			body {
+				background-color:blanchedalmond;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="contenitore_principale">
+		<div>
+			Titolo 1
+		</div>
+		<div>
+			Nunc leo leo, dictum at nisi non, rhoncus vehicula tellus. Pellentesque ac felis rhoncus, porttitor sapien ut, fermentum ligula. Nam ut sem ipsum. Donec sodales mattis lectus in dignissim. Sed diam diam, placerat vel nisl sed, accumsan condimentum est. Integer vulputate purus dolor, id rhoncus erat placerat fermentum. Integer tincidunt, tellus a imperdiet auctor, neque leo pulvinar nunc, sit amet tempor dolor leo ut ante. Duis sit amet velit tortor. Nam sagittis tellus vitae mattis porttitor. Praesent at facilisis ligula. Maecenas et libero rutrum, convallis tortor iaculis, luctus felis. Etiam pharetra hendrerit tempor. Integer porta lorem leo, sed scelerisque mauris facilisis in. Sed nec malesuada ex, at facilisis leo. Ut nisl dui, efficitur id massa commodo, aliquet commodo eros. Curabitur eget tempor tellus.
+			Nunc leo leo, dictum at nisi non, rhoncus vehicula tellus. Pellentesque ac felis rhoncus, porttitor sapien ut, fermentum ligula. Nam ut sem ipsum. Donec sodales mattis lectus in dignissim. Sed diam diam, placerat vel nisl sed, accumsan condimentum est. Integer vulputate purus dolor, id rhoncus erat placerat fermentum. Integer tincidunt, tellus a imperdiet auctor, neque leo pulvinar nunc, sit amet tempor dolor leo ut ante. Duis sit amet velit tortor. Nam sagittis tellus vitae mattis porttitor. Praesent at facilisis ligula. Maecenas et libero rutrum, convallis tortor iaculis, luctus felis. Etiam pharetra hendrerit tempor. Integer porta lorem leo, sed scelerisque mauris facilisis in. Sed nec malesuada ex, at facilisis leo. Ut nisl dui, efficitur id massa commodo, aliquet commodo eros. Curabitur eget tempor tellus.
+			Nunc leo leo, dictum at nisi non, rhoncus vehicula tellus. Pellentesque ac felis rhoncus, porttitor sapien ut, fermentum ligula. Nam ut sem ipsum. Donec sodales mattis lectus in dignissim. Sed diam diam, placerat vel nisl sed, accumsan condimentum est. Integer vulputate purus dolor, id rhoncus erat placerat fermentum. Integer tincidunt, tellus a imperdiet auctor, neque leo pulvinar nunc, sit amet tempor dolor leo ut ante. Duis sit amet velit tortor. Nam sagittis tellus vitae mattis porttitor. Praesent at facilisis ligula. Maecenas et libero rutrum, convallis tortor iaculis, luctus felis. Etiam pharetra hendrerit tempor. Integer porta lorem leo, sed scelerisque mauris facilisis in. Sed nec malesuada ex, at facilisis leo. Ut nisl dui, efficitur id massa commodo, aliquet commodo eros. Curabitur eget tempor tellus.
+		</div>
+		<div>
+			Vivamus velit tellus, ullamcorper ut fringilla vel, convallis ac nisl. Phasellus faucibus euismod enim, in semper urna sagittis vel. Nam pulvinar, nunc sed efficitur congue, turpis enim venenatis urna, non placerat neque velit vitae magna. Donec pellentesque consectetur bibendum. Morbi eu diam eget ipsum fermentum tincidunt. Sed tempus mi justo, eget blandit ipsum tincidunt non. In ac quam eget sapien convallis molestie. Vivamus interdum nec metus ut posuere. Fusce a nibh purus. Sed tortor erat, mattis ut massa et, vulputate vehicula urna. In volutpat, nisi eu porta ultrices, neque neque imperdiet ante, a tristique justo nisl eget odio. Suspendisse ut mi sit amet magna imperdiet commodo.
+			Vivamus velit tellus, ullamcorper ut fringilla vel, convallis ac nisl. Phasellus faucibus euismod enim, in semper urna sagittis vel. Nam pulvinar, nunc sed efficitur congue, turpis enim venenatis urna, non placerat neque velit vitae magna. Donec pellentesque consectetur bibendum. Morbi eu diam eget ipsum fermentum tincidunt. Sed tempus mi justo, eget blandit ipsum tincidunt non. In ac quam eget sapien convallis molestie. Vivamus interdum nec metus ut posuere. Fusce a nibh purus. Sed tortor erat, mattis ut massa et, vulputate vehicula urna. In volutpat, nisi eu porta ultrices, neque neque imperdiet ante, a tristique justo nisl eget odio. Suspendisse ut mi sit amet magna imperdiet commodo.
+			Vivamus velit tellus, ullamcorper ut fringilla vel, convallis ac nisl. Phasellus faucibus euismod enim, in semper urna sagittis vel. Nam pulvinar, nunc sed efficitur congue, turpis enim venenatis urna, non placerat neque velit vitae magna. Donec pellentesque consectetur bibendum. Morbi eu diam eget ipsum fermentum tincidunt. Sed tempus mi justo, eget blandit ipsum tincidunt non. In ac quam eget sapien convallis molestie. Vivamus interdum nec metus ut posuere. Fusce a nibh purus. Sed tortor erat, mattis ut massa et, vulputate vehicula urna. In volutpat, nisi eu porta ultrices, neque neque imperdiet ante, a tristique justo nisl eget odio. Suspendisse ut mi sit amet magna imperdiet commodo.
+			Vivamus velit tellus, ullamcorper ut fringilla vel, convallis ac nisl. Phasellus faucibus euismod enim, in semper urna sagittis vel. Nam pulvinar, nunc sed efficitur congue, turpis enim venenatis urna, non placerat neque velit vitae magna. Donec pellentesque consectetur bibendum. Morbi eu diam eget ipsum fermentum tincidunt. Sed tempus mi justo, eget blandit ipsum tincidunt non. In ac quam eget sapien convallis molestie. Vivamus interdum nec metus ut posuere. Fusce a nibh purus. Sed tortor erat, mattis ut massa et, vulputate vehicula urna. In volutpat, nisi eu porta ultrices, neque neque imperdiet ante, a tristique justo nisl eget odio. Suspendisse ut mi sit amet magna imperdiet commodo.
+		</div>
+	</div>
+</body>
+</html>
