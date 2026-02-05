@@ -102,42 +102,42 @@ Creare una visualizzazione che presenti informazioni da un set di dati personale
 | Studente | CV | URL |
 |---|---|---|
 | Blazquez Colon Alessandro | CV1 | https://yiroxq.github.io/homepage/es_2/index.html |
-| Cantiello Giorgia |  | https://cantiellogiorgia-dev.github.io/website1/ |
-| Cardinale Giulia |  | https://giuliacardinalefoto00-png.github.io/CardinaleGiulia_Portfolio/ |
+| Cantiello Giorgia | CV1 | https://cantiellogiorgia-dev.github.io/website1/ |
+| Cardinale Giulia | CV1 | https://giuliacardinalefoto00-png.github.io/CardinaleGiulia_Portfolio/ |
 | Conconi Laura | CV1 | https://lauraconconi.github.io/laurasite/ |
-| Fezzigna Lara |  | https://larafezzigna-ui.github.io/ilmiosito/ |
-| Galli Alessia |  |  |
-| Giobbi Fiona Budda |  |  |
-| Groenendal Demi |  | https://demigroenendal.github.io/homepage/ |
+| Fezzigna Lara | CV1 | https://larafezzigna-ui.github.io/ilmiosito/ |
+| Galli Alessia | CV1 |  |
+| Giobbi Fiona Budda | CV1 |  |
+| Groenendal Demi | CV1 | https://demigroenendal.github.io/homepage/ |
 | Krndija Mijo Leon | CV1 | https://leonkrndija-cloud.github.io/leonrkrndija/ |
-| Leo Tommaso |  |  |
+| Leo Tommaso | CV1 |  |
 | Mignami Nicole | CV1 | https://nicomigna.github.io/ilmiosito-nm/ |
-| Riccio Sara |  | https://saariccio.github.io/ilmiosito/ |
-| Scofano Mattia | CV2 |  |
+| Riccio Sara | CV1 | https://saariccio.github.io/ilmiosito/ |
+| Scofano Mattia | CV1 |  |
 | Seker Hakan | CV1 | https://hs28-04.github.io/CV1_Seminar_202_01/ |
 | Stanga Vito | CV1 |  |
 | Videira Alice | CV1 |  |
 | Aktas Tuana | CV2 | https://tuana-aktas.github.io/Homepage/giorno1/es3/index.html |
-| Baggi Alice |  |  |
+| Baggi Alice | CV2 |  |
 | Balinzo Giada | CV2 | https://giada-balinzo.github.io/ilmiosito/ |
 | Barattini Davide | CV2 | https://davidebarattini.github.io/sitopersonale/ |
 | Belli Nahele | CV2 | https://naheleee.github.io/WEBCODING_AndreasGysin/ESERCIZI/ES.1/Esercizio_1.html |
-| Benedetti Olivia |  | https://gattoviola.github.io/ilmiosito/ |
-| Bionda Alissa |  | https://ali-0032.github.io/sitoweb/ |
+| Benedetti Olivia | CV2 | https://gattoviola.github.io/ilmiosito/ |
+| Bionda Alissa | CV2 | https://ali-0032.github.io/sitoweb/ |
 | Broggini Melissa | CV2 | https://melissabroggini.github.io/sitomel/ |
-| Chicherio Michelle |  |  |
+| Chicherio Michelle | CV2 |  |
 | De Gennaro Carla | CV2 | https://carladegennaro.github.io/carladegennaro_portfolio/homepage/v2/index.html |
-| Del Rosso Allegra |  | https://allegradr.github.io/Homepage/giorno1/es2/index.html |
-| Falcone Daniele |  | https://dadiccs.github.io/miosito/ |
+| Del Rosso Allegra | CV2 | https://allegradr.github.io/Homepage/giorno1/es2/index.html |
+| Falcone Daniele | CV2 | https://dadiccs.github.io/miosito/ |
 | Guante Elisabeth | CV2 | https://gnteli.github.io/gnteli-sites/ |
 | Hess Lorenzo | CV2 | https://l0renz0hess.github.io/sito/ |
-| Krsteva Djordja |  |  |
+| Krsteva Djordja | CV2 |  |
 | Lopopolo Greta | CV2 | https://gretalopopolo.github.io/ilmiosito/ |
 | Maghetti Simone | CV2 |  |
 | Mazzola Luca | CV2 | https://lucamazzolaa.github.io/ilmiosito/giorno1/index.html |
 | Pantani Laura | CV2 | https://laura-pantani.github.io/ilmiosito/ |
 | Ribeiro Marques Sofia |  | https://sofiaribeiromarques.github.io/sof.marques_portfolio/giorno1 |
 | Riva Gregorio | CV2 | https://gregorioriva.github.io/ilmiosito/ |
-| Salmina Deborah |  |  |
+| Salmina Deborah | CV2 |  |
 | Vosti Riccardo | CV2 | https://riccardovosti.github.io/Portfolio/ |
-| Zemp Martina |  | https://github.com/martinazemp/ilmiosito |
+| Zemp Martina | CV2 | https://github.com/martinazemp/ilmiosito |
