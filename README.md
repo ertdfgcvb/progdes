@@ -121,7 +121,7 @@ Creare una visualizzazione che presenti informazioni da un set di dati personale
 | Baggi Alice | CV2 |  |
 | Balinzo Giada | CV2 | https://giada-balinzo.github.io/ilmiosito/ |
 | Barattini Davide | CV2 | https://davidebarattini.github.io/sitopersonale/ |
-| Belli Nahele | CV2 | https://naheleee.github.io/WEBCODING_AndreasGysin/ESERCIZI/ES.1/Esercizio_1.html |
+| Belli Nahele | CV2 | https://naheleee.github.io/WEBCODING_AndreasGysin/index.html|
 | Benedetti Olivia | CV2 | https://gattoviola.github.io/ilmiosito/ |
 | Bionda Alissa | CV2 | https://ali-0032.github.io/sitoweb/ |
 | Broggini Melissa | CV2 | https://melissabroggini.github.io/sitomel/ |
