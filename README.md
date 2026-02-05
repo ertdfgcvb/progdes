@@ -98,3 +98,47 @@ Il “font” può essere interattivo e/o generativo, può reagire a dati o stim
 ### Obiettivi 
 Creare una visualizzazione che presenti informazioni da un set di dati personale come l'archivio email, dati del fitness tracker, messaggi, selfies, archivio foto, ecc.
 
+### Siti Studenti
+
+| Studente | URL |
+|---|---|
+| Blazquez Colon Alessandro | https://yiroxq.github.io/homepage/es_2/index.html |
+| Cantiello Giorgia | https://cantiellogiorgia-dev.github.io/website1/ |
+| Cardinale Giulia | https://giuliacardinalefoto00-png.github.io/CardinaleGiulia_Portfolio/ |
+| Conconi Laura | https://lauraconconi.github.io/laurasite/ |
+| Fezzigna Lara | https://larafezzigna-ui.github.io/ilmiosito/ |
+| Galli Alessia |  |
+| Giobbi Fiona Budda |  |
+| Groenendal Demi | https://demigroenendal.github.io/homepage/ |
+| Krndija Mijo Leon | https://leonkrndija-cloud.github.io/leonrkrndija/ |
+| Leo Tommaso |  |
+| Mignami Nicole | https://nicomigna.github.io/ilmiosito-nm/ |
+| Riccio Sara | https://saariccio.github.io/ilmiosito/ |
+| Scofano Mattia |  |
+| Seker Hakan | https://hs28-04.github.io/CV1_Seminar_202_01/ |
+| Stanga Vito |  |
+| Videira Alice |  |
+| Aktas Tuana | https://tuana-aktas.github.io/Homepage/giorno1/es3/index.html |
+| Baggi Alice |  |
+| Balinzo Giada | https://giada-balinzo.github.io/ilmiosito/ |
+| Barattini Davide | https://davidebarattini.github.io/sitopersonale/ |
+| Belli Nahele | https://naheleee.github.io/WEBCODING_AndreasGysin/ESERCIZI/ES.1/Esercizio_1.html |
+| Benedetti Olivia | https://gattoviola.github.io/ilmiosito/ |
+| Bionda Alissa | https://ali-0032.github.io/sitoweb/ |
+| Broggini Melissa | https://melissabroggini.github.io/sitomel/ |
+| Chicherio Michelle |  |
+| De Gennaro Carla | https://carladegennaro.github.io/carladegennaro_portfolio/homepage/v2/index.html |
+| Del Rosso Allegra | https://allegradr.github.io/Homepage/giorno1/es2/index.html |
+| Falcone Daniele | https://dadiccs.github.io/miosito/ |
+| Guante Elisabeth | https://gnteli.github.io/gnteli-sites/ |
+| Hess Lorenzo | https://l0renz0hess.github.io/sito/ |
+| Krsteva Djordja |  |
+| Lopopolo Greta | https://gretalopopolo.github.io/ilmiosito/ |
+| Maghetti Simone |  |
+| Mazzola Luca | https://lucamazzolaa.github.io/ilmiosito/giorno1/index.html |
+| Pantani Laura | https://laura-pantani.github.io/ilmiosito/ |
+| Ribeiro Marques Sofia | https://sofiaribeiromarques.github.io/sof.marques_portfolio/giorno1 |
+| Riva Gregorio | https://gregorioriva.github.io/ilmiosito/ |
+| Salmina Deborah |  |
+| Vosti Riccardo | https://riccardovosti.github.io/Portfolio/ |
+| Zemp Martina | https://github.com/martinazemp/ilmiosito |
