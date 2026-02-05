@@ -39,5 +39,5 @@ settings.json
 .history/
 
 # Archivi
-_bak/*
-hi/*
+**/_bak/**
+**/cv_people/**/hi/**
