@@ -111,6 +111,14 @@ DT_FORMATS = [
     "%d.%m.%Y %I:%M:%S %p",
 ]
 
+# Bracketed timestamp line alone:
+BRACKET_TS_ONLY = re.compile(
+    r"^\[(?P<date>\d{1,2}[\/\.\-]\d{1,2}[\/\.\-]\d{2,4})(?:,\s+|\s+)"
+    r"(?P<time>\d{1,2}:\d{2}(?::\d{2})?\s*(?:AM|PM|am|pm)?)\]\s*$"
+)
+
+# Next-line "Name: text" (no timestamp):
+SENDER_ONLY = re.compile(r"^(?P<sender>[^:]+):\s*(?P<text>.*)$")
 
 def try_parse_dt(date_str, time_str):
     s = f"{date_str} {time_str}".strip()
@@ -142,13 +150,55 @@ def parse_chat_text(content):
     Returns list of messages:
       dict(ts=datetime, sender=str|None, text=str, is_system=bool)
     Handles multiline messages by appending lines that don't start a new message.
+    Also supports 2-line formats like:
+      [15.04.2020 16:20:56]
+      Name: message
     """
     messages = []
     current = None
+    pending_ts = None  # holds datetime for 2-line header formats
 
     for raw_line in content.splitlines():
         line = raw_line.rstrip("\n")
 
+        # 1) If we have a pending timestamp, try to bind this line as sender/message
+        if pending_ts is not None:
+            m2 = SENDER_ONLY.match(line)
+            if m2:
+                # Flush previous
+                if current is not None:
+                    messages.append(current)
+                gd2 = m2.groupdict()
+                current = {
+                    "ts": pending_ts,
+                    "sender": gd2["sender"].strip(),
+                    "text": gd2.get("text", "") or "",
+                    "is_system": False,
+                }
+                pending_ts = None
+                continue
+            else:
+                # Treat as system message text under that timestamp
+                if current is not None:
+                    messages.append(current)
+                current = {
+                    "ts": pending_ts,
+                    "sender": None,
+                    "text": line,
+                    "is_system": True,
+                }
+                pending_ts = None
+                continue
+
+        # 2) Detect bracketed timestamp-only line: "[date time]" or "[date, time]"
+        m_ts = BRACKET_TS_ONLY.match(line)
+        if m_ts:
+            ts = try_parse_dt(m_ts.group("date"), m_ts.group("time"))
+            if ts is not None:
+                pending_ts = ts
+            continue
+
+        # 3) Normal one-line parsing (your existing logic)
         matched = None
         is_system = False
 
@@ -168,7 +218,6 @@ def parse_chat_text(content):
                     break
 
         if matched:
-            # Flush previous
             if current is not None:
                 messages.append(current)
 
@@ -188,15 +237,14 @@ def parse_chat_text(content):
             if current is not None:
                 current["text"] += "\n" + line
             else:
-                # junk/header before first parsable line -> ignore
                 pass
 
     if current is not None:
         messages.append(current)
 
-    # Drop messages with unparsed timestamps
     messages = [m for m in messages if m["ts"] is not None]
     return messages
+
 
 
 def ascii_hourly_bar(hour_counts):
