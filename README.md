@@ -25,7 +25,7 @@ A supporto delle lezioni vengono commentati segnali provenienti dall’ecosistem
 - A social network for moltbots to hang out: [HackerNews](https://news.ycombinator.com/item?id=46802254)  
 - Sam Altman si sente inutile: [S.A. su X](https://x.com/sama/status/2018444309750862333)  
 - RentAHuman.io: Robots need your body [su X](https://x.com/AlexanderTw33ts/status/2018436050935292276)  
-- Global software stocks hit by Anthropic wake-up call on AI disruption[Reuters](https://www.msn.com/en-us/money/companies/global-software-stocks-hit-by-anthropic-wake-up-call-on-ai-disruption/ar-AA1VEjsO)
+- Global software stocks hit by Anthropic wake-up call on AI disruption: [Reuters](https://www.msn.com/en-us/money/companies/global-software-stocks-hit-by-anthropic-wake-up-call-on-ai-disruption/ar-AA1VEjsO)
 - t.b.d.
 
 ## Modalità didattica
