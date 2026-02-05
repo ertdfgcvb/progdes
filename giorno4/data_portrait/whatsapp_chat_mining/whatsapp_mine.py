@@ -40,6 +40,11 @@ WORD_RE = re.compile(r"[a-zàèéìòùäöüßçñ]+", re.IGNORECASE)
 # ----------------------------
 
 # Start-of-message patterns (capture date, time, sender, text)
+# iOS-like (bracketed) patterns:
+# Supports:
+#   [15.04.2020, 16:20:56] Name: text
+#   [15.04.2020 16:20:56]  Name: text
+
 PATTERNS = [
     # Android-like: "dd/mm/yy, hh:mm - Name: text"
     re.compile(
@@ -47,16 +52,14 @@ PATTERNS = [
         r"(?P<time>\d{1,2}:\d{2}(?::\d{2})?\s*(?:AM|PM|am|pm)?)\s+-\s+"
         r"(?P<sender>[^:]+):\s*(?P<text>.*)$"
     ),
-    # iOS-like: "[dd/mm/yy, hh:mm:ss] Name: text"
+    # iOS-like: "[dd/mm/yy, hh:mm:ss] Name: text" OR "[dd/mm/yy hh:mm:ss] Name: text"
     re.compile(
-        r"^\[(?P<date>\d{1,2}[\/\.\-]\d{1,2}[\/\.\-]\d{2,4}),\s+"
+        r"^\[(?P<date>\d{1,2}[\/\.\-]\d{1,2}[\/\.\-]\d{2,4})(?:,\s+|\s+)"
         r"(?P<time>\d{1,2}:\d{2}(?::\d{2})?\s*(?:AM|PM|am|pm)?)\]\s+"
         r"(?P<sender>[^:]+):\s*(?P<text>.*)$"
     ),
-    # Some exports omit sender colon for system messages; we parse those separately.
 ]
 
-# System message patterns (no "Name:")
 SYSTEM_PATTERNS = [
     # Android-like system: "dd/mm/yy, hh:mm - text"
     re.compile(
@@ -64,13 +67,14 @@ SYSTEM_PATTERNS = [
         r"(?P<time>\d{1,2}:\d{2}(?::\d{2})?\s*(?:AM|PM|am|pm)?)\s+-\s+"
         r"(?P<text>.*)$"
     ),
-    # iOS-like system: "[dd/mm/yy, hh:mm:ss] text"
+    # iOS-like system: "[dd/mm/yy, hh:mm:ss] text" OR "[dd/mm/yy hh:mm:ss] text"
     re.compile(
-        r"^\[(?P<date>\d{1,2}[\/\.\-]\d{1,2}[\/\.\-]\d{2,4}),\s+"
+        r"^\[(?P<date>\d{1,2}[\/\.\-]\d{1,2}[\/\.\-]\d{2,4})(?:,\s+|\s+)"
         r"(?P<time>\d{1,2}:\d{2}(?::\d{2})?\s*(?:AM|PM|am|pm)?)\]\s+"
         r"(?P<text>.*)$"
     ),
 ]
+
 
 # Date/time parse formats to try
 DT_FORMATS = [
