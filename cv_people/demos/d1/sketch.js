@@ -1,5 +1,3 @@
-const QUALITY = "low"
-const CV_PATH = "../../"
 const NUM_H = 9
 const NUM_V = 9
 const SPACING = 120
@@ -51,7 +49,10 @@ function setup() {
 	textFont(font)
 	textSize(16)
 
-	loadHeads(heads, cv)
+	const QUALITY = "low"
+	const PATH = "../../"
+
+	loadHeads(heads, cv, PATH, QUALITY)
 }
 
 function draw() {
@@ -163,10 +164,10 @@ function flipY(model) {
 	return model
 }
 
-function loadHeads(target, source) {
+function loadHeads(target, source, path = '../../', quality = 'low') {
 	for (const head of source) {
 		console.log ("Loading head: ", head)
-		const headModel = loadModel(`${CV_PATH}/${head}/${QUALITY}/head.obj`, {
+		const headModel = loadModel(`${path}/${head}/${quality}/head.obj`, {
 			normalize : false,
 			successCallback: (model) => {
 				headData.model = flipY(model)
@@ -178,7 +179,7 @@ function loadHeads(target, source) {
 				console.error("Error loading model: ", error)
 			}
 		})
-		const headTexture = loadImage(`${CV_PATH}/${head}/${QUALITY}/head.jpg`)
+		const headTexture = loadImage(`${path}/${head}/${quality}/head.jpg`)
 
 		const headData = {
 			model: headModel,
