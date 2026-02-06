@@ -147,4 +147,4 @@ Lab e wrap-up.
 | Riva Gregorio             | CV2 | https://gregorioriva.github.io/ilmiosito/ |
 | Salmina Deborah           | CV2 | missing |
 | Vosti Riccardo            | CV2 | https://riccardovosti.github.io/Portfolio/ |
-| Zemp Martina              | CV2 | missing |
+| Zemp Martina              | CV2 | https://martinazemp.github.io/ilmiosito/ |
