@@ -1,6 +1,6 @@
 const NUM_H = 19
 const NUM_V = 19
-const NUM_RAND = Math.floor(Math.random() * 3) + 1
+const NUM_RAND = 1 // Uno o più...
 const SPACING = 35
 const MODEL_SCALE = 600
 const DEF_ROTY_ANGLE = -Math.PI/2
