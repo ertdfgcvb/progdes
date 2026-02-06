@@ -92,7 +92,7 @@ function draw() {
 			const hz = offsZ + j * SPACING
 
 			const oy = map(noise(nx + i * 0.1, ny + j * 0.1), 0, 1, -70, 70)
-			const ry = sin(frameCount * 0.02 + i * 0.2 + j * 0.2) * HALF_PI
+			const ry = sin(frameCount * 0.02 + i * 0.14 + j * 0.14) * HALF_PI
 
 			push()
 
