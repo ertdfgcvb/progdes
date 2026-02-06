@@ -181,9 +181,9 @@ function flipY(model) {
 }
 
 function calcBouningBox(model) {
-	if (!model) {
-		return {x: 0, y: 0, z: 0, width: 0, height: 0, depth: 0}
-	}
+
+	if (!model) return new AABB()
+
 	let minX = Infinity
 	let maxX = -Infinity
 	let minY = Infinity
@@ -206,19 +206,23 @@ function calcBouningBox(model) {
 		maxZ = Math.max(maxZ, z)
 	}
 
-	const aabb = {
-		// minX: minX,
-		// maxX: maxX,
-		// minY: minY,
-		// maxY: maxY,
-		// minZ: minZ,
-		// maxZ: maxZ,
-		width: maxX - minX,
-		height: maxY - minY,
-		depth: maxZ - minZ,
-		x: (minX + maxX) / 2,
-		y: (minY + maxY) / 2,
-		z: (minZ + maxZ) / 2,
-	}
-	return aabb
+	return new AABB(
+		(minX + maxX) / 2,
+		(minY + maxY) / 2,
+		(minZ + maxZ) / 2,
+		maxX - minX,
+		maxY - minY,
+		maxZ - minZ,
+	)
 }
+
+class AABB {
+	constructor(x = 0, y = 0, z = 0, width = 0, height = 0, depth = 0) {
+		this.x = x
+		this.y = y
+		this.z = z
+		this.width = width
+		this.height = height
+		this.depth = depth
+	}
+ }
