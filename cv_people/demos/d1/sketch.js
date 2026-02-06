@@ -1,11 +1,11 @@
 const QUALITY = "low"
 const CV_PATH = "../../"
-const NUM_H = 16
-const NUM_V = 16
+const NUM_H = 9
+const NUM_V = 9
 const SPACING = 120
 const MODEL_SCALE = 350
-const DEF_ROTY_ANGLE = -HALF_PI
-const DEF_OFFS_Y = -0.25 // Unità mesh!
+const DEF_ROTY_ANGLE = -Math.PI/2
+const DEF_OFFS_Y = -0.30 // Unità mesh!
 
 const cv = [
 	"cv1/biazquez_alessandro",
@@ -78,7 +78,7 @@ function draw() {
 			const hz = offsZ + j * SPACING
 
 			const oy = sin(frameCount * 0.05 + i * 0.4 + j * 0.4) * 50
-			const ry = sin(frameCount * 0.02 + i * 0.1 + j * 0.1) * HALF_PI
+			const ry = sin(frameCount * 0.02 + i * 0.2 + j * 0.2) * HALF_PI
 
 			push()
 
